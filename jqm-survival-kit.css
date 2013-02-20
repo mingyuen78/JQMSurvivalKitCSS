@@ -1,0 +1,91 @@
+/********************************************************************************************/
+/*  Name : jQuery Mobile Survival Kit                                                       */
+/*  Description : The only framework thats needs such css, due to bugs all over the UI      */
+/*  hardly any improvement even @ 1.2 still no proper scrollview implementation and always  */
+/*  encounter hardware acceleration issues with rendering.                                  */
+/********************************************************************************************/
+
+* {
+	/***************** Shadows are slow on android *********************************/
+	/***************** Global Shadow Wipe Jutsu!! **********************************/
+	text-shadow: none;
+ 	box-shadow: none;
+ 	-webkit-box-shadow: none;
+}
+
+/******* Global Transition Ease Controller - Grease Jutsu, change the duration *******/
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 350ms !important;
+}
+
+.steroid {
+	/* 
+	Steroid Jutsu ....Adds hardware acceleration to stimulate faster rendering.
+	Warning: Too much hardware acceleration slows down the whole site and may cause the browser
+	to crash, Just target a container div that wraps everything.
+	*/
+	-webkit-transform: translate3d(0,0,0);
+  	-moz-transform: translate3d(0,0,0);
+  	-ms-transform: translate3d(0,0,0);
+}
+
+.inflateSide {
+	/* Used in removing the 15px margin located at the left and right of listview items */
+	margin-left:-15px !important;
+	margin-top:-15px !important;
+}
+
+.inflateAllSide {
+	/* Used in removing the 15px margin located at listview items/ body of div data-role="content" */
+	margin:-15px !important;
+}
+
+.topMargin15px {
+	/* When you inflateAllSide, might want to add this to your listView UL to push the div below the content back */
+	margin-top:15px !important;	
+}
+
+.resetHeader {
+	/* To be used with their h1 - h6, removes margin on top and on bottom */
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+
+.shadowText {
+	/*** Customly add back your own ***/
+	text-shadow: 0px -1px 2px rgba(150, 150, 150, 1) !important;
+}
+
+.dropShadow {
+	/*** Customly add back your own ***/
+	-webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.35) !important;
+	-moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.35) !important;
+	box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.35) !important;
+}
+
+.centerDiv {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.smoothScroller {
+	/*** Careful when using this, it makes long content scrollable with touch,
+	Weird rendering may happened, in some cases wrap with steroid ***/
+	-webkit-overflow-scrolling: touch;
+}
+
+.stopFlicker {
+	/*** Sometimes, the body or page background may flicker, if so, use StopFlicker Jutsu ***/
+	-webkit-backface-visibility: hidden;
+}
+
+.stripBorders {
+	border:none !important;
+}
+
+.squareCorners {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
