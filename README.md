@@ -6,12 +6,8 @@ How to Use
 Just load link rel this css after, all your css of jqm and themeroller. Works with JQM 1.2+
 
 
-/********************************************************************************************/
-/*  Name : jQuery Mobile Survival Kit                                                       */
-/*  Description : The only framework thats needs such css, due to bugs all over the UI      */
-/*  hardly any improvement even @ 1.2 still no proper scrollview implementation and always  */
-/*  encounter hardware acceleration issues with rendering.                                  */
-/********************************************************************************************/
+Description : The only framework thats needs such css, due to bugs all over the UI, hardly any improvement even @ 1.2 - 1.3 ish
+still no proper scrollview implementation and always encounter hardware acceleration issues with rendering. Therefore, this kit is always handy.
 
 
 The MIT License
