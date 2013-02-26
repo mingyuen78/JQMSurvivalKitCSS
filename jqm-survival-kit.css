@@ -71,7 +71,7 @@
 
 .smoothScroller {
 	/*** Careful when using this, it makes long content scrollable with touch,
-	Weird rendering may happened, in some cases wrap with steroid ***/
+	Weird rendering may happened, in some cases wrap with steroid class div ***/
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -81,6 +81,7 @@
 }
 
 .stripBorders {
+	/* Just plain and simple border stripping */
 	border:none !important;
 }
 
@@ -88,4 +89,15 @@
 	-webkit-border-radius: 0px !important;
 	-moz-border-radius: 0px !important;
 	border-radius: 0px !important;
+}
+
+a {
+	/* IPad Only fix for copy URL pops, try press and hold anything with a href in IOS */
+	/* you will know what i mean :) */
+	-webkit-touch-callout: none !important;
+}
+
+* { 
+	/* Prevents users from selecting text inside div, label and url */
+	-webkit-user-select:text;
 }
