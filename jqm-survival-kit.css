@@ -106,3 +106,9 @@ a {
 	/* Android input form <input> orange highlighter remover */
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
+
+.removeHLICSFix {
+	/* Warning this may cause unpredictable behavior such as losing number input format such as telephone number */
+	/* This is a ICS 4.0.4 only fix. In most cases removeHL is good enough :). Im just putting this in just in case */
+	-webkit-user-modify: read-write-plaintext-only;
+}
