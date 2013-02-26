@@ -101,3 +101,8 @@ a {
 	/* Prevents users from selecting text inside div, label and url */
 	-webkit-user-select:text;
 }
+
+.removeHL { 
+	/* Android input form <input> orange highlighter remover */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
